@@ -1,0 +1,33 @@
+body{
+    font-display:inherit;
+}
+
+
+
+h1{
+    font-weight: bold
+
+}
+.topnav {
+    text-align: right;
+    font-weight: bold;
+  
+}
+
+#date{ 
+    font-style:italic;
+    font: weight 50px;
+    font-size: 15px;
+
+}
+
+    
+
+
+
+
+  p {
+      font-family: 'Courier New', Courier, monospace;
+      margin-bottom: -20px;
+  }
+ 
