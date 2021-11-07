@@ -1,0 +1,14 @@
+#container{
+    background-color: grey;
+}
+.red, span {
+    color: red;
+}
+a{
+    color:blue;
+}
+ div>p>a{
+     color:pink;
+     background-color: rosybrown;
+ }
+

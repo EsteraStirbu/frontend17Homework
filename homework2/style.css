@@ -7,11 +7,18 @@ body{
 h1{
     font-weight: bold
 
+   
 }
 .topnav {
     text-align: right;
     font-weight: bold;
+    border-bottom: 4px solid black;
   
+    
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 
 #date{ 
@@ -28,6 +35,7 @@ h1{
 
   p {
       font-family: 'Courier New', Courier, monospace;
+      
       margin-bottom: -20px;
   }
  
