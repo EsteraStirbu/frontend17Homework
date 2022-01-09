@@ -9,20 +9,26 @@
 #fields{
     display:flex;
     flex-direction: column;
-    justify-content: center;
+     justify-content: center; 
      align-items: center;
-    align-content: center;
+    /* align-content: center; */
     margin-left: 300px;
-   margin-top: 100px;
+    margin-top: 100px;
     height: 500px;
     width: 800px;
     background-color: thistle;
-  border: 2px solid black;
+   border: 2px solid black; 
   gap: 3px;
 }
 .form-group{
-   width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    width: 300px;
+    gap:3px;
+    
 } 
+
 #gender{
      margin-left:50px;
     flex-direction: column;
@@ -32,10 +38,22 @@
     color: white;
     width: 70px;
     border-radius: 10px;
-   margin-left:555px;
+   margin-left:450px;
 
 }
 #message{
     height: 100px;
     width: 500px;
+    
+}
+.is-invalid{
+    border-color: red;
+}
+.valid{
+    border-color:  green;
+}
+#alert{
+    background-color: greenyellow;
+    margin-right: 200px;
+    margin-bottom: 20px;
 }

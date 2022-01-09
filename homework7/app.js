@@ -1,4 +1,4 @@
-// get element from DOM : inputs, textarea and alert div and submit button
+ // get element from DOM : inputs, textarea and alert div and submit button
 var alertMessage = document.getElementById('alert');
 var inputFirstName = document.getElementById('firstName');
 var inputLastName = document.getElementById('lastName');
@@ -13,12 +13,12 @@ textAreaMessage.addEventListener('keyup', checkTextAreaMessageFunction);
 submitBtnForm.addEventListener('click', submitForm);
 
 function checkInputFirstNameFunction(e){
-    // console.log(e.target);
-    if(e.target.value == 0){
-        // console.log('is empty');
+   
+    if(inputFirstName== 0){
+        
         inputFirstName.classList.add('is-invalid');
     } else {
-        inputFirstName.classList.remove('is-invalid');
+        inputFirstName.classList.add('valid');
     }
 }
 
@@ -26,7 +26,7 @@ function checkInputLastNameFunction(e){
     if(e.target.value == 0){
         inputLastName.classList.add('is-invalid');
     } else {
-        inputLastName.classList.remove('is-invalid');
+        inputLastName.classList.add('valid');
     }
 }
 
@@ -34,7 +34,7 @@ function checkTextAreaMessageFunction(e){
     if(e.target.value == 0){
         textAreaMessage.classList.add('is-invalid');
     } else {
-        textAreaMessage.classList.remove('is-invalid');
+        textAreaMessage.classList.add('valid');
     }
     if (e.keyCode == 13) {
         submitForm(e);
@@ -57,12 +57,12 @@ function submitForm(e){
         inputFirstName.classList.remove('is-invalid');
         inputLastName.classList.remove('is-invalid');
         textAreaMessage.classList.remove('is-invalid');  
-            alertMessage.classList.add('alert-success', 'd-block', 'show' ,'fade');
+            alertMessage.classList.add('alert-success');
             alertMessage.innerHTML = 
             "<span class='check'>✓</span>" +
             "Thank you for contacting us, " +
                 inputFirstName.value +
-                "<button type='button' class='close' data-dismiss='alert' aria-label='Close'>" + 
+                "<button type='button' class='close' data-dismiss='alert' aria-label='Close'>"+
                 "</button>";
             console.log('Firstname : ' + inputFirstName.value);
             console.log('Lastname : ' + inputLastName.value);
