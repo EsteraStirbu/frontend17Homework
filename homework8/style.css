@@ -1,0 +1,87 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200;1,300;1,400&family=Mulish:ital,wght@0,200;1,200&family=Poppins:wght@200&family=Roboto:ital,wght@0,700;1,900&display=swap'); */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+    font-family:  'Montserrat', sans-serif;;
+}
+#content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+     text-align: center;
+    margin-top: 150px;
+    gap:4px;
+   
+}
+#title{
+    display: flex;
+    justify-content: center;
+   padding-top: 50px;
+    
+}
+#inputs input{
+   width: 300px;
+
+}
+#inputs{
+    margin-right: 100px;
+    margin-top: -60px;
+    margin-bottom: 30px;
+   
+}
+#name{
+    margin-bottom: 10px;
+}
+.img-container{
+  margin-right: 40px;
+}
+.box-message{
+    width: 300px;
+    height: 200px;
+}
+#submitbutton{
+    background-color: black;
+    color:blanchedalmond;
+    cursor: pointer;
+}
+.comments-container {
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	gap: 20px;
+}
+
+.comment {
+	display: flex;
+	border: 1px solid gray;
+	width: 350px;
+	padding: 10px;
+    margin-top: 30px;
+	border-radius: 5px;
+	background-color: honeydew;
+	gap: 30px;
+}
+.user-info img {
+	height: 50px;
+	width: 50px;
+}
+.comment-text {
+	border: 1px dashed gray;
+	padding: 10px;
+	height: min-content;
+	align-self: center;
+}
+
+.comment-delete {
+	background-color: red;
+	color: white;
+	height: min-content;
+	align-self: center;
+	justify-self: flex-end;
+	padding: 5px;
+	cursor: pointer;
+}
